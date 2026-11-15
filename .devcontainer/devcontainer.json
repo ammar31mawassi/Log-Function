@@ -1,0 +1,16 @@
+{
+  "name": "hw1 assembly ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "13xforever.language-x86-64-assembly"
+      ]
+    }
+  },
+  "postCreateCommand": "nasm -v && gcc --version && make --version"
+}
